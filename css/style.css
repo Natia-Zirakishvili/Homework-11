@@ -11,9 +11,15 @@
 }
 
 .flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .logo {
@@ -152,7 +158,10 @@ input[type=submit] {
 
 @media (max-width: 860px){
 	.flex {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.nav-ul {display: none}
@@ -161,7 +170,10 @@ input[type=submit] {
 		display: inline-block;	
 	}
 	.header, .socials {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	.footer p {
@@ -176,7 +188,6 @@ input[type=submit] {
 		padding: 0 10px;
 	}
 }
-
 
 
 
